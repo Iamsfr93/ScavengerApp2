@@ -17,6 +17,10 @@ struct RewardView: View {
             Text("🏆 Hunt Results")
                 .font(.largeTitle)
                 .fontWeight(.bold)
+            Text("Found Items: \(foundCount) / 10")
+                .font(.title)
+                .padding(.bottom)
+            
             // Reward Tiers
             if foundCount >= 10 {
 

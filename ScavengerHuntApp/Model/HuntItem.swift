@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct HuntItem : Identifiable{
+struct HuntItem : Identifiable, Codable{
     
     //using for providing unique id
-    let id = UUID()
+    var id = UUID()
     var businessName: String
     var hiddenItemName: String
     //using clue for searching item reference
